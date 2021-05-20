@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  width: 400px;
+  border: 1px solid black;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px 50px 10px;
+  background-color: #ffce33;
+  position: relative;
+}
+header span {
+  font-size: 20px;
+}
+.search {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0px 15px 0px 30px;
+  width: 350px;
+  border-radius: 30px;
+  position: absolute;
+  left: 25px;
+  top: 80px;
+  color: gainsboro;
+  box-shadow: 0px 5px 20px gainsboro;
+}
+.search span {
+  font-size: 16px;
+}
+main {
+  padding: 40px 15px 0px 15px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0px 0px 5px 0px;
+}
+h5 {
+  color: gainsboro;
+  margin: 0px;
+}
+img {
+  border-radius: 15px;
+}
+.todays-book {
+  display: flex;
+  justify-content: flex-start;
+}
+.todays-book :last-child {
+  display: flex;
+  flex-direction: column;
+}
+.todays-book__column {
+  height: 170px;
+  display: flex;
+}
+.img__book--big {
+  height: 170px;
+  width: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.star-grade {
+  display: flex;
+}
