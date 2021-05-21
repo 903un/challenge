@@ -11,7 +11,6 @@ body {
 }
 .wrapper {
   width: 400px;
-  border: 1px solid black;
 }
 header {
   display: flex;
@@ -42,11 +41,12 @@ header span {
   font-size: 16px;
 }
 main {
-  padding: 40px 15px 0px 15px;
+  padding: 40px 0px 40px 15px;
 }
 h1 {
   font-size: 24px;
   font-weight: 600;
+  margin-top: 30px;
 }
 h2 {
   font-size: 20px;
@@ -62,22 +62,92 @@ img {
 }
 .todays-book {
   display: flex;
-  justify-content: flex-start;
 }
-.todays-book :last-child {
+.todays-books--info {
   display: flex;
   flex-direction: column;
 }
-.todays-book__column {
-  height: 170px;
-  display: flex;
+.img {
+  object-fit: cover;
 }
 .img__book--big {
-  height: 170px;
-  width: 120px;
-  object-fit: cover;
   margin-right: 20px;
+  height: 200px;
+  width: 140px;
+}
+.img__book--small {
+  width: 100px;
+  height: 140px;
+}
+.img__profile {
+  width: 140px;
+  height: 160px;
 }
 .star-grade {
+  margin-top: 10px;
+  color: #ffce33;
+}
+.star-grade :last-child {
+  color: gainsboro;
+}
+.category {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.category div {
+  background-color: whitesmoke;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+.category :last-child {
+  margin-left: 10px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__bookmark {
+  background-color: #ffce33;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.btn__book-now {
+  background-color: rgb(15, 15, 15);
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 14px;
+}
+.top-Adventures {
+  display: flex;
+  overflow-x: scroll;
+}
+.book-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.popular-authors {
+  display: flex;
+}
+.authors__info {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  line-height: 25px;
 }
